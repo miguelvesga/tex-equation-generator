@@ -78,7 +78,7 @@ window.MathJax = {
   script.onload = function() {
     // remote script has loaded
   };
-  script.src = 'https://cdn.mathjax.org/mathjax/latest/MathJax.js';
+  script.src = 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js';
   d.getElementsByTagName('head')[0].appendChild(script);
 
 }(document));
