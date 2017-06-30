@@ -1,0 +1,17 @@
+<script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_SVG" type="text/javascript">
+function getText(){
+  var math = document.getElementById("viewer");
+  MathJax.Hub.Queue(["Typeset",MathJax.Hub,math]);
+}
+function upt(){
+  document.getElementById('viewer').innerHTML = "\\[" + document.getElementById('myTextarea').value + "\\]";
+}
+</script>
+
+<textarea id="myTextarea" rows="20" cols="50"></textarea>
+<button onclick="getText()">show</button>
+<button onclick="upt()">update</button>
+
+
+<div id="viewer"> \({}\)
+</div>

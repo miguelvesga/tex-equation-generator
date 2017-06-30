@@ -1,0 +1,33 @@
+{
+  "manifest_version": 2,
+
+  "name": "TeX Equation Generator",
+  "description": "Converts the selected text into a TeX mathematical equation.",
+  "version": "1.0",
+  "author": "Miguel Vesga",
+
+  "icons": {
+    "48": "/img/icon48.png",
+    "128": "/img/icon128.png"
+  },
+
+  "browser_action": {
+    "default_icon": "/img/icon48.png",
+    "default_title": "TeX",
+    "default_popup": "js/content.html"
+  },
+
+  "permissions": [
+    "activeTab"
+  ],
+
+  "commands": {
+    "_execute_browser_action": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+F"
+      }
+    }
+  },
+
+  "content_security_policy": "script-src 'self' https://cdn.mathjax.org/; object-src 'self'"
+}
